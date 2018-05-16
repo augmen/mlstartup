@@ -37,3 +37,9 @@ python -m spacy download en
 
 # Scikit Learn
 conda install scikit-learn
+
+#msgpack 
+conda install -c conda-forge msgpack-c
+conda install -c conda-forge msgpack-python 
+conda install -c anaconda msgpack-numpy 
+
