@@ -1,3 +1,5 @@
+
+sudp apt-get update
 wget https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 bash Anaconda3-5.1.0-Linux-x86_64.sh
 # Activate conda 
@@ -10,6 +12,15 @@ source activate ml
 
 #pytorch python 3.6 with cuda 8.0
 conda install pytorch torchvision -c pytorch
+
+#CUDA Support
+curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda-8-0
+sudo nvidia-smi -pm 1
+nvidia-smi
+
 
 # Tensorflow python 3.6 
 pip install --ignore-installed --upgrade \https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.8.0-cp36-cp36m-linux_x86_64.whl
