@@ -30,3 +30,7 @@ conda install -c anaconda scipy
 conda install -c anaconda numpy
 conda install -c conda-forge matplotlib
 conda install -c conda-forge/label/rc matplotlibytlib ken matplotlib
+
+# Spacy 
+conda install -c conda-forge spacy
+python -m spacy download en
