@@ -1,7 +1,11 @@
 wget https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 bash Anaconda3-5.1.0-Linux-x86_64.sh
 # Activate conda 
+cd anaconda3
+source bin/activate 
+# Create A ml ENV 
 conda create -n ml pip python=3.6
+cd envs/ml
 source activate 
 
 #pytorch python 3.6 with cuda 8.0
